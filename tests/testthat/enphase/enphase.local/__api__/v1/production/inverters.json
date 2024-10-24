@@ -1,0 +1,17 @@
+{
+  "122000000001": {
+    "lastReportDate": 1667471311,
+    "lastReportWatts": 50
+    "maxReportWatts": 480,
+  },
+  "122000000002": {
+    "lastReportDate": 1667471311,
+    "lastReportWatts": 60
+    "maxReportWatts": 459,
+  },
+  "122000000003": {
+    "lastReportDate": 1667471311,
+    "lastReportWatts": 70
+    "maxReportWatts": 519,
+  }
+}

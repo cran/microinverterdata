@@ -1,0 +1,16 @@
+{
+  "inverters": [
+    {
+      "id": "INV12345",
+      "status": "online",
+      "power_output": 50.3,
+      "efficiency": 95.2
+    },
+    {
+      "id": "INV67890",
+      "status": "offline",
+      "power_output": 0.0,
+      "efficiency": null
+    }
+  ]
+}

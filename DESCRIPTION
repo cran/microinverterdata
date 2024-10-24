@@ -1,7 +1,7 @@
 Package: microinverterdata
 Type: Package
 Title: Collect your Microinverter Data
-Version: 0.1.0
+Version: 0.2.0
 Authors@R: c(
     person(given = "Christophe",
            family = "Regouby",
@@ -10,21 +10,23 @@ Authors@R: c(
            )
     )
 Description: Collect and normalize local microinverter energy and power production
-    data through off-cloud API requests. Currently supports 'APSystems'
-    microinverters.
+    data through off-cloud API requests. Currently supports 'APSystems', 'Enphase',
+    and 'Fronius' microinverters.
 License: MIT + file LICENSE
-BugReports: https://github.com/camembR/microinverterdata/issues
-URL: https://camembr.github.io/microinverterdata/
+BugReports: https://github.com/CamembR/microinverterdata/issues
+URL: https://camembr.github.io/microinverterdata/,
+        https://github.com/CamembR/microinverterdata
 Encoding: UTF-8
-Imports: cli, dplyr, glue, httr2, purrr, readr, rlang, tidyr, units
+Imports: cli, dplyr, glue, httr2, lubridate, purrr, readr, rlang,
+        tidyr, units
 RoxygenNote: 7.3.2
-Suggests: httptest2, knitr, lubridate, pins, rmarkdown, tibble,
-        testthat (>= 3.0.0)
+Suggests: httptest2, knitr, pins, rmarkdown, tibble, testthat (>=
+        3.0.0)
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2024-10-01 17:21:12 UTC; creg
+Packaged: 2024-10-24 06:33:07 UTC; creg
 Author: Christophe Regouby [aut, cre, cph]
 Maintainer: Christophe Regouby <christophe.regouby@free.fr>
 Repository: CRAN
-Date/Publication: 2024-10-02 16:50:02 UTC
+Date/Publication: 2024-10-24 08:10:02 UTC

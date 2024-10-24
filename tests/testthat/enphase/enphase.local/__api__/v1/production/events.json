@@ -1,0 +1,62 @@
+{
+  "3015": {
+    "message": "Microinverter failed to report: Set",
+    "serialNumber": "122000000001",
+    "type": "pcu ",
+    "datetime": "Wed Nov 02, 2022 04:53 PM CET"
+  },
+  "3016": {
+    "message": "Microinverter failed to report: Clear",
+    "serialNumber": "122000000002",
+    "type": "pcu ",
+    "datetime": "Wed Nov 02, 2022 04:54 PM CET"
+  },
+  "3017": {
+    "message": "Microinverter failed to report: Set",
+    "serialNumber": "122000000002",
+    "type": "pcu ",
+    "datetime": "Wed Nov 02, 2022 04:54 PM CET"
+  },
+  "3018": {
+    "message": "Microinverter failed to report: Clear",
+    "serialNumber": "122000000002",
+    "type": "pcu ",
+    "datetime": "Thu Nov 03, 2022 07:12 AM CET"
+  },
+  "3019": {
+    "message": "Microinverter failed to report: Clear",
+    "serialNumber": "122000000001",
+    "type": "pcu ",
+    "datetime": "Thu Nov 03, 2022 07:12 AM CET"
+  },
+  "3020": {
+    "message": "Power On Reset",
+    "serialNumber": "122000000002",
+    "type": "pcu ",
+    "datetime": "Thu Nov 03, 2022 07:12 AM CET"
+  },
+  "3021": {
+    "message": "DC Voltage Too Low: Clear",
+    "serialNumber": "122000000001",
+    "type": "pcu channel 1",
+    "datetime": "Thu Nov 03, 2022 07:42 AM CET"
+  },
+  "3022": {
+    "message": "Power On Reset",
+    "serialNumber": "122000000001",
+    "type": "pcu ",
+    "datetime": "Thu Nov 03, 2022 07:12 AM CET"
+  },
+  "3023": {
+    "message": "DC Power Too Low: Clear",
+    "serialNumber": "122000000002",
+    "type": "pcu ",
+    "datetime": "Thu Nov 03, 2022 08:01 AM CET"
+  },
+  "3024": {
+    "message": "DC Power Too Low: Clear",
+    "serialNumber": "122000000001",
+    "type": "pcu ",
+    "datetime": "Thu Nov 03, 2022 08:00 AM CET"
+  }
+}

@@ -378,16 +378,28 @@ can choose the most simpler board to be the local board</li>
 </div>
 <div id="all-in-one-in-a-script" class="section level2">
 <h2>All-in-one in a script</h2>
-<p>As we know the dynamic behavior, we can move that to a R script and
-run it on a regular basis with system tools like crontab for linux :</p>
-<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">crontab</span> <span class="at">-l</span></span></code></pre></div>
-<p>and you can use and edit the following file</p>
-<div class="sourceCode" id="cb7"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">system.file</span>(<span class="st">&quot;inverter_data.R&quot;</span>, <span class="at">package =</span> <span class="st">&quot;microinverterdata&quot;</span>)</span></code></pre></div>
+<p>Now that we know the dynamic behavior, we can move that to a R script
+and run it on a regular basis with system tools</p>
+<p>and you can use and edit the following file as a baseline</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">system.file</span>(<span class="st">&quot;inverter_data.R&quot;</span>, <span class="at">package =</span> <span class="st">&quot;microinverterdata&quot;</span>)</span></code></pre></div>
 <p>and setup (or remove) the environment variables required for the
-script to run, then put that script in the crontab to run it every 30
-min like in the following crontab entry</p>
+script to run, and finally save the modified script in an accessible
+folder.</p>
+<div id="macos-linux-platform" class="section level3">
+<h3>MacOS / Linux platform</h3>
+<p>The system tool <code>crontab</code> is the tool of choice for job
+scheduling on linux :</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="fu">crontab</span> <span class="at">-l</span></span></code></pre></div>
+<p>Last step here is to configure the crontab to run it every 30 min
+like in the following <code>crontab</code> entry</p>
 <pre><code># m h dom mon dow command
-0,30 * * * * R CMD BATCH inverter_data.R</code></pre>
+0,30 * * * * R CMD BATCH /path/of/modified/inverter_data.R</code></pre>
+</div>
+<div id="ms-windows-platform" class="section level3">
+<h3>MS Windows platform</h3>
+<p>Depending of your version, last step here is to configure the task
+scheduler or the powershell <code>PSScheduledJob</code> to run it.</p>
+</div>
 </div>
 </div>
 
