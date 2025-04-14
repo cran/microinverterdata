@@ -1,8 +1,8 @@
 ---
-title: "data_collection"
+title: "Local Data Collection"
 output: rmarkdown::html_vignette
 vignette: >
-  %\VignetteIndexEntry{data_collection}
+  %\VignetteIndexEntry{Local Data Collection}
   %\VignetteEngine{knitr::rmarkdown}
   %\VignetteEncoding{UTF-8}
 ---
@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
   purl = FALSE
 )
 library(httptest2)
-start_vignette("data_collection")
+start_vignette("Local Data Collection")
 ```
 
 ```{r setup}
@@ -38,7 +38,7 @@ library(pins)
 board <- board_local()
 if (!"inverter_data" %in% pin_list(board)) {
   initial_data <- tibble::tibble(
-    date = lubridate::now(), get_output_data(c("192.168.0.175"))
+    date = Sys.time(), get_output_data(c("192.168.0.175"))
     )
   board |> pin_write(initial_data, name = "inverter_data", versioned = TRUE)
 }
@@ -55,7 +55,7 @@ history <- board |> pin_read("inverter_data")
 
 ```{r}
 new_data <- tibble::tibble(
-  date = lubridate::now(), get_output_data(c("192.168.0.175"))
+  date = Sys.time(), get_output_data(c("192.168.0.175"))
   )
 board |> pin_write(rbind(history, new_data), name = "inverter_data", versioned = TRUE)
 

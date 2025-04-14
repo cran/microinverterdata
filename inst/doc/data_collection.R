@@ -6,5 +6,5 @@ knitr::opts_chunk$set(
   purl = FALSE
 )
 library(httptest2)
-start_vignette("data_collection")
+start_vignette("Local Data Collection")
 
