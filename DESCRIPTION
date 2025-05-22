@@ -1,7 +1,7 @@
 Package: microinverterdata
 Type: Package
 Title: Collect your Microinverter Data
-Version: 0.3.0
+Version: 0.4.0
 Authors@R: c(
     person(given = "Christophe",
            family = "Regouby",
@@ -25,8 +25,8 @@ Suggests: httptest2, knitr, lubridate, pins, rmarkdown, tibble,
 Config/testthat/edition: 3
 VignetteBuilder: knitr
 NeedsCompilation: no
-Packaged: 2025-04-14 20:46:33 UTC; creg
+Packaged: 2025-05-22 10:38:51 UTC; creg
 Author: Christophe Regouby [aut, cre, cph]
 Maintainer: Christophe Regouby <christophe.regouby@free.fr>
 Repository: CRAN
-Date/Publication: 2025-04-14 21:00:02 UTC
+Date/Publication: 2025-05-22 10:50:02 UTC

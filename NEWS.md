@@ -1,3 +1,12 @@
+# microinverterdata 0.4.0
+
+# microinverterdata 0.3.1
+
+* fix energy units to be kW.h (thanks to @tvroylandt)
+* fix missing units for AP devices
+* fix correct power unit for Enphase and Fronius
+* improve error message expressivness.
+
 # microinverterdata 0.3.0
 
 * now perform requests to multiple devices in parallel (AP System & Fronius). #14

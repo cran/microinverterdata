@@ -1,0 +1,21 @@
+// manualy constructed as per
+// https://support.enphase.com/s/question/0D53m00009aZOxJCAW/injected-power-to-grid-always-return-zero-via-api-after-firmware-upgrade
+// consider it with care for
+// Envoy S firmware >= D7.6.168
+{
+    "eid": 704643584,
+    "timestamp": 1705589559,
+    "actEnergyDlvd": 234436.999,
+    "actEnergyRcvd": 670356.771,
+    "apparentEnergy": 938062.139,
+    "reactEnergyLagg": 72.179,
+    "reactEnergyLead": 156971.869,
+    "instantaneousDemand": -2176.584,
+    "activePower": -2176.584,
+    "apparentPower": 2195.195,
+    "reactivePower": -311.810,
+    "pwrFactor": -0.993,
+    "voltage": 230.928,
+    "current": 9.506,
+    "freq": 50.000,
+}
